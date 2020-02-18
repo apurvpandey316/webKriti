@@ -1,7 +1,15 @@
 body{
-  background-color:black;
+  background-color: black;
+  color: white;
 }
-
+#head{
+  color: #e0ab5b;
+  font-size: 7rem;
+  animation: fade-in 10s ease 1;
+}
+.changeHead{
+  transition: 3s;
+}
 /* ONLOAD */
 .initialImage{
 
@@ -14,12 +22,6 @@ body{
 }
 .makeItSmall{
   transition: 3s ;
-  animation: makeItSmall ease 1;
-}
-@keyframes makeItSmall {
-  100%{
-    transform: scale(0.2,0.2);
-  }
 }
 .title{
   animation: brand 5s ease 1;
@@ -87,8 +89,8 @@ nav{
 }
 .nav-elements a:hover{
     color: red;
-    font-size: 22px;
+    /* font-size: 22px; */
 }
 .nav-elements a:active{
-  color: red;
+  color: green;
 }
