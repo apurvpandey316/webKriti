@@ -1,24 +1,74 @@
 body{
   background-color: black;
-  color: white;
 }
+
+/* HEAD */
 #head{
-  color: #e0ab5b;
+  padding: 10px;
+  margin-left: 500px;
+  margin-top: 200px;
+  position: fixed;
+  color: white;
+  text-shadow: 2px 2px 8px #fff;
   font-size: 7rem;
   animation: fade-in 10s ease 1;
 }
 .changeHead{
   transition: 3s;
 }
+.bigcircle{
+  margin: 100px 0px;
+  width: 1000px;
+}
+.smallcircle{
+  position: fixed;
+  margin-top: 100px;
+  margin-left: 400px;
+  width: 100%;
+  opacity: 25%;
+  animation: fade-in-circle 20s linear 1;
+  z-index: -1;
+}
+
+@keyframes fade-in-circle {
+  0%{
+    opacity: 0%;
+  }
+  25%{
+    opacity: 0%;
+  }
+  50%{
+    opacity: 12.5%;
+  }
+  75%{
+    opacity: 12.5%
+  }
+  100%{
+    opacity: 25%;
+  }
+}
+.getCircle{
+  transition: 10s;
+}
+.rotate1{
+  animation: rotate1 60s linear infinite;
+}
+@keyframes rotate1 {
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
 /* ONLOAD */
 .initialImage{
-
+  position: relative;
+  z-index: 1;
   margin-top: 80px;
   margin-left: 440px;
   width: 450px;
 }
 .initialImage:hover{
-  cursor: grab;
+  cursor: pointer;
 }
 .makeItSmall{
   transition: 3s ;
@@ -82,15 +132,20 @@ nav{
 .nav-elements a{
     text-align: right;
     padding: 10px;
-    color: black;
     font-size: 20px;
     text-decoration: none;
     color: white;
 }
 .nav-elements a:hover{
-    color: red;
+  background-color: white;
+  border-radius: 100%;
+  color: red;
     /* font-size: 22px; */
 }
 .nav-elements a:active{
+  background-color: white;
+  border-radius: 100%;
   color: green;
 }
+
+/* CONTENT */
