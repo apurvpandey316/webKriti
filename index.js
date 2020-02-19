@@ -8,4 +8,5 @@ function start(){
   setTimeout(()=>{document.querySelector(".smallcircle").classList.add("rotate1");},13000);
 }
 function backCircle(){
+
 }
